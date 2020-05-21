@@ -80,7 +80,7 @@ class CodegenCommand: Command {
                 }
             }
         
-            public var description: String {
+            public var label: String {
                 switch self {
         """
         
@@ -94,10 +94,18 @@ class CodegenCommand: Command {
                     default: return ""
                 }
             }
+        
+            public var description: String {
+                return self.unicode
+            }
         }
         """
         
-        FileManager.default.createFile(atPath: "Sources/FASCore/FAEnum.swift", contents: faEnum.data(using: .utf8), attributes: nil)
+        if FileManager.default.createFile(atPath: "Sources/FACore/FAEnum.swift", contents: faEnum.data(using: .utf8), attributes: nil) {
+            print("FAEnum generated")
+        } else {
+            print("Failed to write file")
+        }
     }
 }
 

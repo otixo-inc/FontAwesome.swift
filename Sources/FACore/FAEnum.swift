@@ -4347,7 +4347,7 @@ public enum FAIcon: String, CaseIterable, CustomStringConvertible {
         }
     }
 
-    public var description: String {
+    public var label: String {
         switch self {
 			case .fiveHundredPixels: return "500px"
 			case .accessibleIcon: return "Accessible Icon"
@@ -5789,5 +5789,9 @@ public enum FAIcon: String, CaseIterable, CustomStringConvertible {
 			case .zhihu: return "Zhihu"
             default: return ""
         }
+    }
+
+    public var description: String {
+        return self.unicode
     }
 }

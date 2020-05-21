@@ -49,6 +49,10 @@ extension FAIcon {
         }
         self = icon
     }
+    
+    public subscript(_ code: String) -> Self? {
+        return Self(code: code)
+    }
 }
 
 // A quick extension that returns all icons for a given instance style
