@@ -1,0 +1,21 @@
+PODS:
+  - FontAwesome.swift (2.0.0-alpha):
+    - FontAwesome.swift/Core (= 2.0.0-alpha)
+    - FontAwesome.swift/UIKit (= 2.0.0-alpha)
+  - FontAwesome.swift/Core (2.0.0-alpha)
+  - FontAwesome.swift/UIKit (2.0.0-alpha):
+    - FontAwesome.swift/Core
+
+DEPENDENCIES:
+  - FontAwesome.swift (from `../`)
+
+EXTERNAL SOURCES:
+  FontAwesome.swift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FontAwesome.swift: 9fc21dd542d7c525d7865f251f98a59be0e88b67
+
+PODFILE CHECKSUM: fcbb5bd96eb563c73108be024ec5f722a8eab419
+
+COCOAPODS: 1.9.1

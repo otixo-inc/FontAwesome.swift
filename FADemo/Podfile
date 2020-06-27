@@ -1,0 +1,8 @@
+platform :ios, '13.0'
+
+target 'FADemo' do
+  use_frameworks!
+
+  pod 'FontAwesome.swift', :path => '../'
+
+end
