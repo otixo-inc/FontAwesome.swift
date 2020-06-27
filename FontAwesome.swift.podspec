@@ -12,10 +12,11 @@ Pod::Spec.new do |spec|
                     :tag => spec.version.to_s }
 
     spec.swift_version = '5.0'
-    spec.ios.deployment_target = '10.0'
     
     spec.subspec 'Core' do |ss|
         ss.source_files = 'Sources/FACore'
+        ss.ios.deployment_target = '8.0'
+        ss.watchos.deployment_target = '4.0'
     end
     
     spec.subspec 'UIKit' do |ss|
